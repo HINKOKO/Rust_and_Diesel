@@ -39,25 +39,3 @@ pub fn create_post(conn: &mut PgConnection, title: &str, body: &str) -> Post {
 // When we call .get_result() on an insert or update statement,
 // it automatically adds RETURNING * to the end of the query
 // and lets us load it into any struct that implements Queryable for the right types. Neat!
-
-
-
-
-
-
-// pub fn add(left: usize, right: usize) -> usize {
-//     left + right
-// }
-
-// #[cfg(test)]
-// mod tests {
-//     use super::*;
-
-//     #[test]
-//     fn it_works() {
-//         let result = add(2, 2);
-//         assert_eq!(result, 4);
-//     }
-// }
-
-
