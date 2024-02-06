@@ -13,7 +13,7 @@ fn main() {
 		.limit(5)
 		.select(Post::as_select())
 		.load(connection)
-		.expect("Error loading posts")
+		.expect("Error loading posts");
 	
 	println!("Displaying {} posts", results.len());
 	for post in results {
